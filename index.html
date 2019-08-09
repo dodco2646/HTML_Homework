@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather Analysis Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="Page_background">
+            <nav class="navbar">
+                <div class="NavTitle">
+                    <a href="index.html">Latitude</a>
+                </div>
+                <ul class="NavPages">
+                    <li class="dropdown">Plots
+                        <ul class='dropdown-content'>
+                            <li><a href="\vis1.html">Max Tempurature</a></li>
+                            <li><a href="\vis2.html">Humidity</a></li>
+                            <li><a href="\vis3.html">Cloudiness</a></li>
+                            <li><a href="\vis4.html">Wind Speed</a></li>    
+                        </ul>
+                    </li>
+                    <li><a href="\Comparison.html">Comparison</a></li>
+                    <li><a href="\Data.html">Data</a></li>
+                </ul>                 
+            </nav>
+            <br>
+            <br>
+            <div class="summary_viz">
+                <div class="summary_desc">
+                    <p>
+                        <h1>
+                            Summary: Latitude vs. X
+                        </h1>
+                    </p>    
+    
+                    <p> <img style = "padding: 15px; float: left;" src="\Resources\assets\images\Fig1.png" alt="This is the Fig1 image" 
+                    height="400" width="400">
+                    
+                        The purpose of this project was to analyse how weather changes as your get
+                        closer to the equator.  To accomplish this analysis, we first pulled data 
+                        from the Open WeatherMap API to assemble a dataset on over 500 cities.
+                    </p>
+                    <p>
+                        After assembling the dataset, we used Matplotlib to plot various aspects of
+                        the weather vs. latitiude.  Factors we looked at included: tempurature, cloudiness
+                        wind speed, and humidity.  This site provides the source data and visualizations
+                        created as part of the analysis, as well as explanations and descriptions of any 
+                        trends and correlations witnessed.          
+                    </p>
+                </div>
+                <div style = "float: right;"class = "viz_thumbnails">
+                    <h1 > 
+                        Visualizations
+                        
+                        <div class="thumbnails">
+                           <img src="\Resources\assets\images\Fig1.png" alt="This is the Fig1 image" 
+                            height="200" width="200" link = >  
+                           <img src="\Resources\assets\images\Fig2.png" alt="This is the Fig2 image" 
+                            height="200" width="200" > 
+                           <img src="\Resources\assets\images\Fig3.png" alt="This is the Fig3 image" 
+                            height="200" width="200" > 
+                           <img src="\Resources\assets\images\Fig4.png" alt="This is the Fig4 image" 
+                            height="200" width="200" >
+                            
+                        </div>  
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
